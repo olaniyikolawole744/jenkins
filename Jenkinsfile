@@ -7,11 +7,6 @@ pipeline {
     }
 
     stages {
-        stage('Download code from github') {
-            steps {
-                git 'https://github.com/olaniyikolawole744/jenkins.git'
-            }
-        }
         stage('Run terraform init') {
             steps {
                 sh 'terraform init'
